@@ -22,7 +22,7 @@ services:
     ports:
       - 8080:80
     depends_on:
-      - "mysql"
+      - mysql
     environment: 
       - PMA_ARBITRARY=1
     networks:
@@ -33,11 +33,9 @@ services:
   prestashop:
     image: prestashop/prestashop
     depends_on:
-      - "mysql"
+      - mysql
     environment: 
-      - DB_NAME=${DB_NAME}
-      - DB_USER=${DB_USER}
-      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_SERVER=mysql
     volumes:
       - prestashop_data:/var/www/html
     networks:
@@ -50,9 +48,13 @@ services:
     ports:
       - 80:80
       - 443:443
+    restart: always
     environment:
-      DOMAINS: 'practicacomposeivan.tk -> http://prestashop:80'
-      #STAGE: 'production' # Don't use production until staging works
+      DOMAINS: 'composeivan.ml -> http://prestashop:80'
+      STAGE: 'production' # Don't use production until staging works
+      # FORCE_RENEW: 'true'
+    networks:
+      - frontend-network
 
 volumes:
   mysql_data:
