@@ -8,7 +8,7 @@ description: >-
 
 Datos Prestashop:
 
-* Página: [https://composeivan.ml/](https://composeivan.ml/)
+* Página: [https://dcomposeivan.ml/](https://dcomposeivan.ml/)
 * Acceso: ivan@ivan.com
 * Clave: prestashop
 * CPanel: [https://dcomposeivan.ml/admin759tbzidk/index.php?controller=AdminLogin&token=d907eb34a04e39e99dcea45781845569](https://dcomposeivan.ml/admin759tbzidk/index.php?controller=AdminLogin&token=d907eb34a04e39e99dcea45781845569)
