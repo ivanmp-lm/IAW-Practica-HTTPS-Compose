@@ -12,6 +12,10 @@ Datos Prestashop:
 * Acceso: ivan@ivan.com
 * Clave: prestashop
 * CPanel: [https://dcomposeivan.ml/admin759tbzidk/index.php?controller=AdminLogin&token=d907eb34a04e39e99dcea45781845569](https://dcomposeivan.ml/admin759tbzidk/index.php?controller=AdminLogin&token=d907eb34a04e39e99dcea45781845569)
+* PHPMyAdmin: [http://dcomposeivan.ml:8080/](http://dcomposeivan.ml:8080/)
+* Server PHP: mysql
+* User PHP: pst_user
+* Pass PHP: pst_password
 
 
 
@@ -125,3 +129,10 @@ Tras borrar la carpeta install dentro del contenedor de docker e intentar entrar
 ![](https://raw.githubusercontent.com/ivanmp-lm/IAW/master/.gitbook/assets/image%20(38).png)
 
 Pero la mayoría de enlaces están rotos. Buscando en internet he visto que puede tratarse de un problema con la versión de PHP, pero no he encontrado solución.
+
+Error solucionado. Se debe ejecutar las siguientes sentencias en PHPMyAdmin para habilitar el SSL en prestashop:
+
+```text
+UPDATE ps_configuration SET value=1 WHERE name="PS_SSL_ENABLED";
+UPDATE ps_configuration SET value=1 WHERE name="PS_SSL_ENABLED_EVERYWHERE";
+```
