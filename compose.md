@@ -39,7 +39,7 @@ Este contenedor lanzará una imagen con Nginx y Let's Encrypt para proporcionar 
       - 443:443
     restart: always
     environment:
-      DOMAINS: 'composeivan.ml -> http://prestashop:80'
+      DOMAINS: 'dcomposeivan.ml -> http://prestashop:80'
       STAGE: 'production' # Don't use production until staging works
       # FORCE_RENEW: 'true'
     networks:
