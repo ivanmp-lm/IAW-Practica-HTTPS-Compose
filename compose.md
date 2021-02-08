@@ -31,7 +31,7 @@ Se reutilizará el nombre de dominio anterior para esta práctica, redirigiendo 
 
 NOTA: He tenido que finalmente crear un certificado nuevo porque al parecer hay un límite de cuántos certificados puede expedir Let's Encrypt a un mismo dominio y no funcionaba, hasta que ejecuté el compose sin el modo "detached" para ver el log de acciones de HTTPS-PORTAL y encontré esto:
 
-![](https://raw.githubusercontent.com/ivanmp-lm/IAW/master/.gitbook/assets/image%20(41).png)
+![](https://i.ibb.co/P5p5Tzs/image-43.png)
 
 Este contenedor lanzará una imagen con Nginx y Let's Encrypt para proporcionar un certificado SSL. Se añadirá el siguiente bloque al archivo de la práctica de Prestashop:                                                                                                                                                                                                                                                                                   
 
@@ -122,11 +122,11 @@ networks:
 
 Tras hacer la comprobación:
 
-![](https://raw.githubusercontent.com/ivanmp-lm/IAW/master/.gitbook/assets/image%20(34).png)
+![](https://i.ibb.co/Nt4KyXD/image-34.png)
 
 Tras borrar la carpeta install dentro del contenedor de docker e intentar entrar en la tienda, se recibe el error "Too Many Redirections". El panel de control funciona aparentemente bien:
 
-![](https://raw.githubusercontent.com/ivanmp-lm/IAW/master/.gitbook/assets/image%20(38).png)
+![](https://i.ibb.co/JyVfcsf/image-40.png)
 
 Pero la mayoría de enlaces están rotos. Buscando en internet he visto que puede tratarse de un problema con la versión de PHP, pero no he encontrado solución.
 
