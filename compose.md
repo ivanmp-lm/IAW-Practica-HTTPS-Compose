@@ -11,7 +11,7 @@ Datos Prestashop:
 * Página: [https://composeivan.ml/](https://composeivan.ml/)
 * Acceso: ivan@ivan.com
 * Clave: prestashop
-* CPanel: [https://composeivan.ml/admin221wb1unr/index.php?controller=AdminLogin&token=c3c4081db962b5dd8c993b59f8908af7](https://composeivan.ml/admin221wb1unr/index.php?controller=AdminLogin&token=c3c4081db962b5dd8c993b59f8908af7)
+* CPanel: [https://dcomposeivan.ml/admin759tbzidk/index.php?controller=AdminLogin&token=d907eb34a04e39e99dcea45781845569](https://dcomposeivan.ml/admin759tbzidk/index.php?controller=AdminLogin&token=d907eb34a04e39e99dcea45781845569)
 
 
 
